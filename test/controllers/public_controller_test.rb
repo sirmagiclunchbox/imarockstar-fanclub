@@ -6,11 +6,6 @@ class PublicControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get home" do
-    get :home
-    assert_response :success
-  end
-
   test "should get about" do
     get :about
     assert_response :success
@@ -18,6 +13,16 @@ class PublicControllerTest < ActionController::TestCase
 
   test "should get contact" do
     get :contact
+    assert_response :success
+  end
+
+  test "should get support" do
+    get :support
+    assert_response :success
+  end
+
+  test "should get documentation" do
+    get :documentation
     assert_response :success
   end
 
